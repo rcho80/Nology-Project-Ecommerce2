@@ -1,0 +1,50 @@
+.box {
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+
+  &__card__items {
+      margin-top: 30px;
+  }
+
+  
+  &__title {
+   padding: 25px; 
+   background-color: rgb(240, 239, 227);
+  }
+
+  &__btn {
+    padding: 10px;
+
+    &__click {
+      margin: 30px 10px 0;
+      font-size: 1.2rem;
+      background-color: lightblue;
+
+      &__count {
+       margin: 30px 10px 0;
+      font-size: 1.4rem;        
+      }
+    }
+
+    &__add {
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin: 30px 15px 0;
+    }
+
+    &__align {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+    &__img {
+      width: 620px;
+      height: 520px;
+      border-radius: 4px;
+    }
+}
+
+

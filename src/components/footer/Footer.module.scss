@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #374151;
+  color: white;
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  &__form__input {
+    font-size: 1.1rem;
+    padding: 7px;
+  }
+
+  &__form__btn {
+    font-size: 1.1rem;
+    margin-left: 4px;
+    border-radius: 4px;
+    padding: 7px;
+    background-color: rgb(251, 191, 36);
+    color: rgb(217, 119, 6);
+    border: solid 2px rgb(217, 119, 6);
+  }
+
+  &__copyright {
+    padding-top: 50px;
+  }
+}

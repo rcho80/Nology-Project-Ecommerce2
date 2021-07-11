@@ -1,0 +1,24 @@
+.cart {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 75px;
+
+  &__title {
+   padding: 25px; 
+   background-color: rgb(240, 239, 227);
+  }
+
+    &__img {
+      width: 620px;
+      height: 520px;
+      border-radius: 4px;
+    }
+
+    &__btn {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      background-color: rgb(245, 241, 231);
+      border-radius: 5px;
+      padding: 10px;
+    }
+}
