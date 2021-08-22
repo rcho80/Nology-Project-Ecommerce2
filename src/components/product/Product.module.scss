@@ -1,50 +1,95 @@
 .box {
-  padding: 35px;
-  display: flex;
-  justify-content: space-around;
+    padding: 15px 35px;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
 
-  &__card__items {
-      margin-top: 30px;
-  }
-
-  
-  &__title {
-   padding: 25px; 
-   background-color: rgb(240, 239, 227);
-  }
-
-  &__btn {
-    padding: 10px;
-
-    &__click {
-      margin: 30px 10px 0;
-      font-size: 1.2rem;
-      background-color: lightblue;
-
-      &__count {
-       margin: 30px 10px 0;
-      font-size: 1.4rem;        
-      }
+    &__title {
+        padding: 10px 10px 10px 40px;
+        background-color: rgb(240, 239, 227);
+        margin: 0;
     }
 
-    &__add {
-      padding: 10px;
-      border-radius: 5px;
-      font-size: 1rem;
-      margin: 30px 15px 0;
+    &__section {
+        display: flex;
+        align-items: center;
     }
 
-    &__align {
-      display: flex;
-      align-items: center;
+    &__card {
+        // margin-right: 150px;
+        padding: 20px;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        justify-content: center;
+
+        &__items {
+            margin: 10px 0;
+        }
+
+        &__variants {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     }
-  }
+
+    &__btn {
+        padding: 10px;
+
+        &__boxes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__click {
+            margin: 30px 10px 0;
+            font-size: 1.2rem;
+            background-color: lightblue;
+
+            &__count {
+                margin: 30px 10px 0;
+                font-size: 1.4rem;
+            }
+        }
+
+        &__add {
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin: 30px 15px 0;
+            display: block;
+            text-align: center;
+
+            &:hover {
+                background-color: #d97706;
+                cursor: pointer;
+            }
+        }
+    }
 
     &__img {
-      width: 620px;
-      height: 520px;
-      border-radius: 4px;
+        width: 450px;
+        height: 420px;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 0 0 5px 5px;
+
+        &__small {
+            padding: 0 0 5px 5px;
+            width: 150px;
+            height: 100px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+    }
+
+    &__prodId {
+        padding-top: 10px;
+        font-style: italic;
     }
 }
-
-

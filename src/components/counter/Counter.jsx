@@ -1,12 +1,29 @@
+import styles from "./Counter.module.scss";
 
-export const Counter = ({onChange, value}) => {
-  return (
-    <>
-      <button onClick={() => onChange(value - 1)}>-</button>
-      {value}
-      <button onClick={() => onChange(value + 1)}>+</button>
-    </>
-  );
-}
+export const Counter = ({ negatives = false, countChange, value }) => {
+    return (
+        <>
+            <button
+                className={styles.button}
+                onClick={() => {
+                    if (!negatives && value === 1) {
+                        return;
+                    }
+                    countChange(value - 1);
+                }}
+            >
+                {" "}
+                -
+            </button>
+            <div className={styles.button__value}>{value}</div>
+            <button
+                className={styles.button}
+                onClick={() => countChange(value + 1)}
+            >
+                +
+            </button>
+        </>
+    );
+};
 
-export default Counter
+export default Counter;

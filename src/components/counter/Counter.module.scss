@@ -1,0 +1,11 @@
+.button {
+    padding: 2px 8px;
+    margin: 10px 15px 5px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &__value {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+}

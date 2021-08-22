@@ -1,5 +1,15 @@
-.cart__img {
-  width: 45px;
-  height: 45px;
-  padding-right: 40px;
+.cart {
+    display: flex;
+    padding-right: 20px;
+
+    &__img {
+        width: 45px;
+        height: 45px;
+        padding-left: 8px;
+    }
+
+    &__number {
+        color: #d97706;
+        font-size: 2rem;
+    }
 }
