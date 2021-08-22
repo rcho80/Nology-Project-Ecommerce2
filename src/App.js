@@ -43,6 +43,9 @@ const App = () => {
                 <Route path="/cart">
                     <Cart deleteCount={passedFromCart} />
                 </Route>
+                <Route exact path="/Nology-Project-Ecommerce2/">
+                    <Home />
+                </Route>
                 <Route exact path="/">
                     <Home />
                 </Route>
