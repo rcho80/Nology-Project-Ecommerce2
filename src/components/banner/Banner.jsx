@@ -22,7 +22,10 @@ const Banner = () => {
                         ></img>
                     </Link>
                     <p className={styles.specials__text}>
-                        <Link to="/products" style={{ textDecoration: "none" }}>
+                        <Link
+                            to="/products"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
                             Its party time
                         </Link>
                     </p>
@@ -36,7 +39,10 @@ const Banner = () => {
                         ></img>
                     </Link>
                     <p className={styles.specials__text}>
-                        <Link to="/products" style={{ textDecoration: "none" }}>
+                        <Link
+                            to="/products"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
                             Made for walking
                         </Link>
                     </p>
@@ -50,7 +56,10 @@ const Banner = () => {
                         ></img>
                     </Link>
                     <p className={styles.specials__text}>
-                        <Link to="/products" style={{ textDecoration: "none" }}>
+                        <Link
+                            to="/products"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
                             Monday blues
                         </Link>
                     </p>
@@ -64,7 +73,10 @@ const Banner = () => {
                         ></img>
                     </Link>
                     <p className={styles.specials__text}>
-                        <Link to="/products" style={{ textDecoration: "none" }}>
+                        <Link
+                            to="/products"
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
                             Simply essential
                         </Link>
                     </p>
