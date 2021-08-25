@@ -1,0 +1,51 @@
+.newsLetterForm {
+    &__text {
+        font-size: 1.2rem;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 0.7rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__form__input {
+        font-size: 1.1rem;
+        padding: 2px;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__form__btn {
+        font-size: 1.1rem;
+        margin-left: 4px;
+        border-radius: 4px;
+        padding: 7px;
+        background-color: rgb(251, 191, 36);
+        color: rgb(217, 119, 6);
+        border: solid 2px rgb(217, 119, 6);
+
+        @media only screen and (max-width: 576px) {
+            font-size: 0.8rem;
+        }
+
+        &:hover {
+            background-color: rgb(77, 67, 45);
+        }
+    }
+
+    &__responses {
+        padding: 10px 0;
+        font-size: 1.1rem;
+        color: rgb(251, 191, 36);
+        font-weight: 600;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 0.7rem;
+        }
+    }
+}

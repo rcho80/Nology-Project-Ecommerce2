@@ -5,15 +5,22 @@
     border: 1px rgb(245, 241, 231) solid;
 
     &__words {
-        font-size: 0.85rem;
-
-        line-height: 1rem;
-        width: 250px;
-
+        line-height: 1.4rem;
+        width: 450px;
         text-align: center;
+
+        @media only screen and (max-width: 576px) {
+            width: 150px;
+            line-height: 1;
+        }
 
         &__items {
             font-weight: 600;
+
+            @media only screen and (max-width: 576px) {
+                font-size: 0.8rem;
+                line-height: 0.9;
+            }
         }
     }
 
@@ -21,6 +28,11 @@
         padding: 10px 10px 10px 40px;
         background-color: rgb(240, 239, 227);
         margin: 0;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 1rem;
+            padding: 10px;
+        }
     }
 
     &__img {
@@ -30,19 +42,37 @@
             border-radius: 4px;
             cursor: pointer;
             padding-top: 25px;
+
+            @media only screen and (max-width: 576px) {
+                width: 105px;
+                height: 85px;
+            }
         }
     }
 
     &__btn {
         margin: 10px 0;
-        font-size: 0.85rem;
+        font-size: 1rem;
         background-color: rgb(245, 241, 231);
         border-radius: 5px;
         padding: 10px;
         cursor: pointer;
 
+        @media only screen and (max-width: 576px) {
+            font-size: 0.7rem;
+            padding: 5px;
+            margin: 0 0 10px 0;
+        }
+
         &:hover {
             background-color: rgb(240, 225, 186);
+        }
+    }
+
+    &__productId {
+        font-style: italic;
+        @media only screen and (max-width: 576px) {
+            font-size: 0.7rem;
         }
     }
 }

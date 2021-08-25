@@ -82,7 +82,7 @@ const Cart = ({ deleteCount }) => {
                             alt="#"
                         ></img>
                         <h4 className={styles.cart__productId}>
-                            ProductId: {item.productId}
+                            Product ID: {item.productId}
                         </h4>
                     </div>
                 </div>

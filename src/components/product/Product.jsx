@@ -52,7 +52,7 @@ const Product = ({ start = 1, cartCount }) => {
     cartCount(cart.length);
 
     return (
-        <>
+        <div className={styles.container}>
             <h2 className={styles.box__title}>
                 The Latest styles and trends for all seasons
             </h2>
@@ -136,7 +136,7 @@ const Product = ({ start = 1, cartCount }) => {
                     Product with id = {">"} {id} does not exist
                 </h3>
             )}
-        </>
+        </div>
     );
 };
 

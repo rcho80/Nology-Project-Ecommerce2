@@ -7,12 +7,12 @@ import Hero from "../../components/hero/Hero";
 
 const Home = () => {
     return (
-        <>
+        <div className={styles.home}>
             <Hero />
             <Banner />
             <Grid />
             <Messages />
-        </>
+        </div>
     );
 };
 

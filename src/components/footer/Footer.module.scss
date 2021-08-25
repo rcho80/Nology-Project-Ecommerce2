@@ -1,31 +1,44 @@
+@use "devices" as devices;
+
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;
-  background-color: #374151;
-  color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #374151;
+    color: white;
 
-  &__text {
-    font-size: 1.2rem;
-  }
+    @media only screen and (max-width: 576px) {
+        padding: 10px;
+        margin-top: 10px;
+    }
 
-  &__form__input {
-    font-size: 1.1rem;
-    padding: 7px;
-  }
+    &__text {
+        font-size: 1.2rem;
+    }
 
-  &__form__btn {
-    font-size: 1.1rem;
-    margin-left: 4px;
-    border-radius: 4px;
-    padding: 7px;
-    background-color: rgb(251, 191, 36);
-    color: rgb(217, 119, 6);
-    border: solid 2px rgb(217, 119, 6);
-  }
+    &__form__input {
+        font-size: 1.1rem;
+        padding: 7px;
+    }
 
-  &__copyright {
-    padding-top: 50px;
-  }
+    &__form__btn {
+        font-size: 1.1rem;
+        margin-left: 4px;
+        border-radius: 4px;
+        padding: 7px;
+        background-color: rgb(251, 191, 36);
+        color: rgb(217, 119, 6);
+        border: solid 2px rgb(217, 119, 6);
+    }
+
+    &__copyright {
+        padding-top: 30px;
+        text-align: center;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 0.7rem;
+            padding-top: 10px;
+        }
+    }
 }

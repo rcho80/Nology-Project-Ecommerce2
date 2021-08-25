@@ -16,7 +16,12 @@ const Messages = () => {
                     If you have comments, questions, or issues, our Ninjas are
                     always on call. Need help? Contact a Ninja.
                 </p>
-                <button className={styles.messages__btn}>Contact Us</button>
+                <a
+                    href="https://us2.list-manage.com/contact-form?u=79b0fac893a128121e9e3fd63&form_id=5211847820b649a1861c4793bc158116"
+                    target="_blank"
+                >
+                    <button className={styles.messages__btn}>Contact Us</button>
+                </a>
             </div>
         </>
     );
